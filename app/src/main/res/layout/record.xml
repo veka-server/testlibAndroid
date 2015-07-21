@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/btnValidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" >
+      
+
+	    <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/valid"
+	        android:onClick="validate_click" />
+
+	    <Button
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="@string/Annuler"
+	        android:onClick="cancel_click" />
+	    
+    </LinearLayout>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin" >
+		    	    
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/record_btn"
+	        android:layout_centerHorizontal="true"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <ImageButton
+	        android:id="@+id/record_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:background="@android:color/transparent"
+	        android:onClick="record_btn"
+	        android:src="@drawable/micro" />
+	
+	    <LinearLayout
+	        android:id="@+id/blocLecture"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:visibility="invisible" >
+	
+	        <ImageButton
+	            android:id="@+id/imageButton1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="45dp"
+	            android:background="@android:color/transparent"
+	            android:onClick="play_btn"
+	            android:src="@drawable/play"
+	             />
+	
+	        <TextView
+	            android:id="@+id/timePlay"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:gravity="center_vertical"
+	            android:paddingLeft="10dp"
+	            android:text="00:00:00 / 00:00:00"
+	            android:textAlignment="center" />
+	
+	    </LinearLayout>
+
+	</RelativeLayout>
+    
+</RelativeLayout>

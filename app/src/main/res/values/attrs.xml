@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="AutomaticGridLayout">
+        <attr name="maxColumnNumber" format="integer" />
+		<attr name="spaceBetweenColumnHorizontaly" format="integer" >
+   			<enum name="auto" value="-1"/> 
+   			<enum name="defaultValue" value="5"/> 
+   		</attr>
+   </declare-styleable>
+</resources>

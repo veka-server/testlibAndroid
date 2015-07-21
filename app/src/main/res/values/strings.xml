@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">vekaUtils</string>
+    <string name="valid">Valider</string>
+    <string name="Annuler">Annuler</string>
+    <string name="failMoveFile">Impossible de deplacer le fichier.</string>
+	<string name="AudioRecRequire">Vous devez enregistrer un message pour valider.</string>
+
+    <string name="errorFileNotFound">Le fichier n\'existe pas.</string>
+    <string name="errorFailWriteFile">Impossible d\'enregistrer le fichier.</string>
+	
+</resources>
